@@ -6,7 +6,7 @@ Feature: advantageonlineshopping
       Given  que estou na tela princpal
       When   Clico no menu usuario
       And    clico em CREATE NEW ACCOUNT
-      Then   Preencho os campos Username/Email/Password/Confirm Password Clico em i agree to the
+      Then   Preencho os campos Username Email Password Confirm Password Clico em i agree to the
       And    e clico em register o sistema retorna para a home com o usário logado
 
   @CT0002
@@ -20,20 +20,20 @@ Feature: advantageonlineshopping
   @CT0003
 
   Scenario: Altera Cadastro (Account details)
-    Given que estou na logado e clico no nome do usuário
+    Given estou na logado e clico no nome do usuário
     When  clico em my account e clico account details em edit
-    And   Prencho o campo First Name/lastname/phone number
-    Then  escolho o pais em country e preencho os campos city,adress,postal code,Region
+    And   Prencho o campo First Name lastname phone number
+    Then  escolho o pais em country e preencho os campos city adress postal code Region
     And   clico em SAVE o sistema retorna para a tela MY ACCOUNT
 
   @CT0004
 
   Scenario: Altera cadastrado (Preferred payment method)
-    Given que estou na logado e clico no nome do usuário
-    When  clico em my account e clico Preferred payment method edit
-    And   altero os campos card number/CVV Number/Expiration date
-    Then  clico em Set MasterCredit as your preferred payment
-    And   clico em save o sistema retorna para a tela MY ACCOUNT
+    Given que estou na logado e clico no nome do usuário E clico em my account
+    When  clico Preferred payment method edit
+    And   altero os campos card number CVV Number Expiration date e clico em Set MasterCredit as your preferred payment
+    Then  clico em save o sistema retorna para a tela MY ACCOUNT
+
 
   @CT0005
 
